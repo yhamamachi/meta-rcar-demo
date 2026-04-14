@@ -2,7 +2,6 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 do_install:append() {
     sed -i ${D}/etc/xdg/weston/weston.ini \
-        -e '$a shell=kiosk-shell.so' \
         -e '$a [output]' \
         -e '$a name=DP-1' \
         -e '$a app-ids=DomU' \

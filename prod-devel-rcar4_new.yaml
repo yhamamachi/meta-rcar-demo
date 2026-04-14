@@ -55,7 +55,7 @@ common_data:
     - [SERIAL_CONSOLES, "115200;hvc0"]
 
     # Remove features that we are not using
-    - [DISTRO_FEATURES:remove, "x11 gtk gobject-introspection-data wifi nfc
+    - [DISTRO_FEATURES:remove, "x11 gobject-introspection-data wifi nfc
             bluetooth irda zeroconf 3g sysvinit acl alsa argp pcmcia usbgadget
             usbhost  ptest multiarch  vulkan sysvinit pulseaudio"]
 

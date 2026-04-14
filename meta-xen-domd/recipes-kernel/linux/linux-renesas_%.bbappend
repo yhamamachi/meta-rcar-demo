@@ -1,6 +1,9 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI:append = " \
+    file://0001-arm64-dts-renesas-sparrow-hawk-Reserve-first-128-MiB.patch \
+"
+SRC_URI:append = " \
     file://r8a779g3-xen-chosen.dtsi;subdir=git/arch/arm64/boot/dts/renesas \
     file://r8a779g3-xen.dts;subdir=git/arch/arm64/boot/dts/renesas \
     file://r8a779g3-domd.dts;subdir=git/arch/arm64/boot/dts/renesas \
