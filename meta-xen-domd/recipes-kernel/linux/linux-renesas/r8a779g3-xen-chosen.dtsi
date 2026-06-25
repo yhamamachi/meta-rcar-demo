@@ -12,7 +12,7 @@
 / {
 	chosen {
 		stdout-path = "serial0:921600n8";
-		bootargs = "dom0_mem=512M console=dtuart dtuart=serial0 dom0_max_vcpus=2 loglvl=all xsm=flask flask=permissive bootscrub=0 gnttab_max_frames=512";
+		bootargs = "dom0_mem=512M console=none dom0_max_vcpus=2 loglvl=all xsm=flask flask=permissive bootscrub=0 gnttab_max_frames=512";
 		xen,dom0-bootargs = "root=/dev/ram0 console=hvc0 ignore_loglevel";
 		modules {
 			#address-cells = <2>;
