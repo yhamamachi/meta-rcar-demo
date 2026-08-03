@@ -336,18 +336,22 @@ parameters:
         components:
           dom0:
             builder:
+              conf:
+                - [BBMASK:append, "|meta-sparrow-hawk/recipes-multimedia/opencv/"]
               layers:
                 - "../meta-sparrow-hawk"
           domd:
             sources:
               - type: git
                 url: https://github.com/rcar-community/meta-sparrow-hawk
-                rev: v2026-01-30
+                rev: e05b3389006f0052349746918c587534a11a805b
             builder:
               layers:
                 - "../meta-sparrow-hawk"
           domu:
             builder:
+              conf:
+                - [BBMASK:append, "|meta-sparrow-hawk/recipes-multimedia/opencv/"]
               layers:
                 - "../meta-sparrow-hawk"
   ADD_META_TEST:

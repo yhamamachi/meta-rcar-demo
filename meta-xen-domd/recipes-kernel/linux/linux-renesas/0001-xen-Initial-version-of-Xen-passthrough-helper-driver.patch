@@ -39,13 +39,13 @@ index ea0efd290c37..b1e7bd0b4821 100644
  	tristate
  
 diff --git a/drivers/xen/Makefile b/drivers/xen/Makefile
-index babdca808861..c29088ffeea4 100644
+index 9c2e7b0a0c3e..c29088ffeea4 100644
 --- a/drivers/xen/Makefile
 +++ b/drivers/xen/Makefile
-@@ -42,3 +42,4 @@ xen-gntalloc-y				:= gntalloc.o
- xen-privcmd-y				:= privcmd.o privcmd-buf.o
- obj-$(CONFIG_XEN_FRONT_PGDIR_SHBUF)	+= xen-front-pgdir-shbuf.o
+@@ -40,3 +40,4 @@ obj-$(CONFIG_XEN_FRONT_PGDIR_SHBUF)	+= xen-front-pgdir-shbuf.o
  obj-$(CONFIG_XEN_UNPOPULATED_ALLOC)	+= unpopulated-alloc.o
+ obj-$(CONFIG_XEN_GRANT_DMA_OPS)		+= grant-dma-ops.o
+ obj-$(CONFIG_XEN_GRANT_DMA_IOMMU)	+= grant-dma-iommu.o
 +obj-$(CONFIG_XEN_XT_PASSTHROUGH)	+= xt-passthrough.o
 diff --git a/drivers/xen/xt-passthrough.c b/drivers/xen/xt-passthrough.c
 new file mode 100644
