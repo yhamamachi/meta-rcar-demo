@@ -31,13 +31,13 @@ common_data:
   # meta-xt-common pins to head of master.
   sources: &COMMON_SOURCES
     - type: git
-      url: "git://git.yoctoproject.org/poky"
+      url: "https://git.yoctoproject.org/poky"
       rev: "72983ac391008ebceb45edc7a8f0f6d5f4fe715c"
     - type: git
-      url: "git://git.openembedded.org/meta-openembedded"
+      url: "https://git.openembedded.org/meta-openembedded"
       rev: "2759d8870ea387b76c902070bed8a6649ff47b56"
     - type: git
-      url: "git://git.yoctoproject.org/meta-virtualization"
+      url: "https://git.yoctoproject.org/meta-virtualization"
       rev: "f92518e20530edfebca45e4170e11460949a5303"
     - type: git
       url: "https://github.com/xen-troops/meta-xt-common.git"
@@ -149,7 +149,7 @@ components:
     sources:
       - *COMMON_SOURCES
       - type: git
-        url: git://git.yoctoproject.org/meta-selinux
+        url: https://git.yoctoproject.org/meta-selinux
         rev: scarthgap
     builder:
       type: yocto
@@ -577,7 +577,7 @@ parameters:
           domu:
             sources:
               - type: git
-                url: git://code.qt.io/yocto/meta-qt6.git
+                url: https://code.qt.io/yocto/meta-qt6.git
                 rev: 9bd2c2ae4b4fb536975904fe494813408a2282a3
                 # dev branch
             builder:
