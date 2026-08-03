@@ -32,13 +32,13 @@ common_data:
   sources: &COMMON_SOURCES
     - type: git
       url: "https://git.yoctoproject.org/poky"
-      rev: "72983ac391008ebceb45edc7a8f0f6d5f4fe715c"
+      rev: "1d54d1c4736a114e1cecbe85a0306e3814d5ce70"
     - type: git
       url: "https://git.openembedded.org/meta-openembedded"
-      rev: "2759d8870ea387b76c902070bed8a6649ff47b56"
+      rev: "ef3df29f2cfca6a9513b51ebcdccf82b6c8a836f"
     - type: git
       url: "https://git.yoctoproject.org/meta-virtualization"
-      rev: "f92518e20530edfebca45e4170e11460949a5303"
+      rev: "f851f730ec415d266bfe0c5941c228a63a896298"
     - type: git
       url: "https://github.com/xen-troops/meta-xt-common.git"
       rev: "1164ec5123bfe687503b79126cbd2d86dfa39eaf"
